@@ -1,0 +1,16 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #2196F3;
+    padding: 10px;
+    grid-gap: 50px 100px;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
