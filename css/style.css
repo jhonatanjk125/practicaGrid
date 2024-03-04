@@ -1,0 +1,44 @@
+@import url(variables.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    background-color: var(--primary-color);
+    margin: 100px auto;
+    padding: 40px 50px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(100px,1fr));
+    grid-template-areas: "first-item second-item second-item"
+                         "first-item second-item second-item"
+                         "third-item third-item fourth-item"
+                         "third-item third-item fourth-item";
+    gap: 8px;
+}
+
+.gallery > div {
+    border-radius: 10px;
+    height: 200px;
+    background-color: var(--secondary-color);
+}
+.item-1 {
+    grid-area: first-item;
+}
+
+.item-2 {
+    grid-area: second-item;
+}
+
+.item-3 {
+    grid-area: third-item;
+}
+
+.item-4 {
+    grid-area: fourth-item;
+}
+
