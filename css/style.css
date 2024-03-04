@@ -6,39 +6,96 @@
     padding: 0;
 }
 
-.gallery {
+body {
     background-color: var(--primary-color);
-    margin: 100px auto;
+}
+
+.gallery {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 40px 50px;
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-    grid-template-rows: repeat(auto-fit,minmax(100px,1fr));
-    grid-template-areas: "first-item second-item second-item"
-                         "first-item second-item second-item"
-                         "third-item third-item fourth-item"
-                         "third-item third-item fourth-item";
+    grid-template-rows: repeat(4, minmax(100px,1fr));
+    grid-template-areas: "MacBook-Air MacBook-Pro-2 MacBook-Pro-2"
+                         "MacBook-Air MacBook-Pro-2 MacBook-Pro-2"
+                         "MacBook-Air-2 MacBook-Air-2 MacBook-Pro"
+                         "MacBook-Air-2 MacBook-Air-2 MacBook-Pro";
     gap: 8px;
 }
 
 .gallery > div {
+    padding: 20px;
     border-radius: 10px;
-    height: 200px;
     background-color: var(--secondary-color);
+    text-align: center;
 }
+
+h2 {
+    color: var(--accent-color);
+    font-size: 13px;
+    margin: 1.2em;
+    font-weight: 900;
+}
+
+h3 {
+    margin: 1em 0;
+    color: var(--footer-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+strong {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1.75em;
+}
+
+.gallery div img {
+    width: 100%;
+    object-fit: contain;
+}
+
 .item-1 {
-    grid-area: first-item;
+    grid-area: MacBook-Air;
 }
 
 .item-2 {
-    grid-area: second-item;
+    grid-area: MacBook-Pro-2;
+}
+
+.item img {
+    grid-area: image;
 }
 
 .item-3 {
-    grid-area: third-item;
+    grid-area: MacBook-Air-2;
 }
 
 .item-4 {
-    grid-area: fourth-item;
+    grid-area: MacBook-Pro;
 }
 
+@media(width<900px){
+    .gallery{
+        max-height: fit-content;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "MacBook-Pro-2 MacBook-Pro-2"
+                             "MacBook-Air MacBook-Pro"
+                             "MacBook-Air-2 MacBook-Air-2"
+    }
+
+}
+
+@media(width<600px){
+    .gallery{
+        max-height: fit-content;
+        grid-template-columns: 1fr;
+        grid-template-areas: "MacBook-Air"
+                             "MacBook-Pro-2"
+                             "MacBook-Air-2"
+                             "MacBook-Pro";
+    }
+
+}
