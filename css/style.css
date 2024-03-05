@@ -7,11 +7,13 @@
 }
 
 body {
-    display:flex;
-    justify-content: center;
+  display: flex;
+  background-color: var(--background-color);
+  justify-content: center;
 }
 
 .wrapper {
+  margin-top: 20px;
   display: grid;
   padding: 20px;
   max-width: 900px;
@@ -100,81 +102,55 @@ body {
   grid-area: item-17;
 }
 
-
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .wrapper {
     grid-template-columns: repeat(14, 50px);
     grid-template-areas:
-    "item-1 item-1 item-1 item-1 item-1 item-1 item-2 item-2 item-2 item-2 item-2 item-3 item-3 item-3"
-    "item-1 item-1 item-1 item-1 item-1 item-1 item-2 item-2 item-2 item-2 item-2 item-3 item-3 item-3"
-    "item-1 item-1 item-1 item-1 item-1 item-1 item-2 item-2 item-2 item-2 item-2 item-3 item-3 item-3"
-    "item-1 item-1 item-1 item-1 item-1 item-1 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
-    "item-5 item-5 item-5 item-6 item-6 item-6 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
-    "item-5 item-5 item-5 item-6 item-6 item-6 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
-    "item-5 item-5 item-5 item-6 item-6 item-6 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
-    "item-10 item-10 item-10 item-10 item-10 item-10 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
-    "item-10 item-10 item-10 item-10 item-10 item-10 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
-    "item-12 item-12 item-12 item-12 item-15 item-15 item-15 item-15 item-8 item-8 item-8 item-9 item-9 item-9"
-    "item-12 item-12 item-12 item-12 item-15 item-15 item-15 item-15 item-8 item-8 item-8 item-9 item-9 item-9"
-    "item-12 item-12 item-12 item-12 item-15 item-15 item-15 item-15 . . . . item-13 item-13"
-    "item-4 item-4 item-4 item-4 item-4 item-4 item-17 item-17 item-17 item-17 item-17 item-17 item-13 item-13"
-    "item-4 item-4 item-4 item-4 item-4 item-4 item-17 item-17 item-17 item-17 item-17 item-17 item-13 item-13"
-    "item-4 item-4 item-4 item-4 item-4 item-4 item-17 item-17 item-17 item-17 item-17 item-17 item-14 item-14"
-    "item-4 item-4 item-4 item-4 item-4 item-4 item-11 item-11 item-11 item-11 item-11 item-11 item-14 item-14"
-    "item-4 item-4 item-4 item-4 item-4 item-4 item-11 item-11 item-11 item-11 item-11 item-11 item-14 item-14";
+      "item-1 item-1 item-1 item-1 item-1 item-1 item-2 item-2 item-2 item-2 item-2 item-3 item-3 item-3"
+      "item-1 item-1 item-1 item-1 item-1 item-1 item-2 item-2 item-2 item-2 item-2 item-3 item-3 item-3"
+      "item-1 item-1 item-1 item-1 item-1 item-1 item-2 item-2 item-2 item-2 item-2 item-3 item-3 item-3"
+      "item-1 item-1 item-1 item-1 item-1 item-1 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
+      "item-5 item-5 item-5 item-6 item-6 item-6 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
+      "item-5 item-5 item-5 item-6 item-6 item-6 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
+      "item-5 item-5 item-5 item-6 item-6 item-6 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
+      "item-10 item-10 item-10 item-10 item-10 item-10 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
+      "item-10 item-10 item-10 item-10 item-10 item-10 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
+      "item-12 item-12 item-12 item-12 item-15 item-15 item-15 item-15 item-8 item-8 item-8 item-9 item-9 item-9"
+      "item-12 item-12 item-12 item-12 item-15 item-15 item-15 item-15 item-8 item-8 item-8 item-9 item-9 item-9"
+      "item-12 item-12 item-12 item-12 item-15 item-15 item-15 item-15 . . . . item-13 item-13"
+      "item-4 item-4 item-4 item-4 item-4 item-4 item-17 item-17 item-17 item-17 item-17 item-17 item-13 item-13"
+      "item-4 item-4 item-4 item-4 item-4 item-4 item-17 item-17 item-17 item-17 item-17 item-17 item-13 item-13"
+      "item-4 item-4 item-4 item-4 item-4 item-4 item-17 item-17 item-17 item-17 item-17 item-17 item-14 item-14"
+      "item-4 item-4 item-4 item-4 item-4 item-4 item-11 item-11 item-11 item-11 item-11 item-11 item-14 item-14"
+      "item-4 item-4 item-4 item-4 item-4 item-4 item-11 item-11 item-11 item-11 item-11 item-11 item-14 item-14";
   }
 
   .item-16 {
-    display:none;
+    display: none;
   }
 }
 
-
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .wrapper {
     grid-template-columns: repeat(8, 50px);
     grid-template-rows: auto;
     grid-template-areas:
       ". item-1 item-1 item-1 item-1 item-1 item-1 ."
-      ". item-1 item-1 item-1 item-1 item-1 item-1 ."
-      ". item-1 item-1 item-1 item-1 item-1 item-1 ."
-      ". item-1 item-1 item-1 item-1 item-1 item-1 ."
-      "item-2 item-2 item-2 item-2 item-2 item-3 item-3 item-3"
-      "item-2 item-2 item-2 item-2 item-2 item-3 item-3 item-3"
       "item-2 item-2 item-2 item-2 item-2 item-3 item-3 item-3"
       ". item-4 item-4 item-4 item-4 item-4 item-4 ."
-      ". item-4 item-4 item-4 item-4 item-4 item-4 ."
-      ". item-4 item-4 item-4 item-4 item-4 item-4 ."
-      ". item-4 item-4 item-4 item-4 item-4 item-4 ."
-      ". item-4 item-4 item-4 item-4 item-4 item-4 ."
       ". item-5 item-5 item-5 item-6 item-6 item-6 ."
-      ". item-5 item-5 item-5 item-6 item-6 item-6 ."
-      ". item-5 item-5 item-5 item-6 item-6 item-6 ."
-      "item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
-      "item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
-      "item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
-      "item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
-      "item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
-      "item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7"
-      ". item-8 item-8 item-8 item-9 item-9 item-9 ."
+      "item-7 item-7 item-7 item-7 item-7 item-7< item-7 item-7"
       ". item-8 item-8 item-8 item-9 item-9 item-9 ."
       ". item-10 item-10 item-10 item-10 item-10 item-10 ."
-      ". item-10 item-10 item-10 item-10 item-10 item-10 ."
-      ". item-11 item-11 item-11 item-11 item-11 item-11 ."
       ". item-11 item-11 item-11 item-11 item-11 item-11 ."
       ". item-12 item-12 item-12 item-12 item-13 item-13 ."
-      ". item-12 item-12 item-12 item-12 item-13 item-13 ."
-      ". item-12 item-12 item-12 item-12 item-13 item-13 ."
       "item-14 item-14 item-15 item-15 item-15 item-15 item-16 item-16"
-      "item-14 item-14 item-15 item-15 item-15 item-15 item-16 item-16"
-      "item-14 item-14 item-15 item-15 item-15 item-15 item-16 item-16"
-      ". item-17 item-17 item-17 item-17 item-17 item-17 ."
-      ". item-17 item-17 item-17 item-17 item-17 item-17 ."
-      ". item-17 item-17 item-17 item-17 item-17 item-17 ."
-      ;
+      ". item-17 item-17 item-17 item-17 item-17 item-17 .";
   }
   .item-16 {
-    display:block;
+    display: block;
+  }
+  .wrapper > div {
+    margin: 10px;
   }
 }
