@@ -1,0 +1,96 @@
+@import url(variables.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    max-width: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+    grid-template-rows: repeat(12, minmax(50, 1fr));
+    grid-template-areas: 
+    "item-1 item-1 item-1 item-1 item-1 item-1 item-2 item-2 item-2 item-2 item-2 item-3 item-3 item-3 item-4 item-4 item-4 item-4 item-4 item-4"
+    "item-1 item-1 item-1 item-1 item-1 item-1 item-2 item-2 item-2 item-2 item-2 item-3 item-3 item-3 item-4 item-4 item-4 item-4 item-4 item-4"
+    "item-1 item-1 item-1 item-1 item-1 item-1 item-2 item-2 item-2 item-2 item-2 item-3 item-3 item-3 item-4 item-4 item-4 item-4 item-4 item-4"
+    "item-1 item-1 item-1 item-1 item-1 item-1 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-4 item-4 item-4 item-4 item-4 item-4"
+    "item-5 item-5 item-5 item-6 item-6 item-6 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-4 item-4 item-4 item-4 item-4 item-4"
+    "item-5 item-5 item-5 item-6 item-6 item-6 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-8 item-8 item-8 item-9 item-9 item-9"
+    "item-5 item-5 item-5 item-6 item-6 item-6 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-8 item-8 item-8 item-9 item-9 item-9"
+    "item-10 item-10 item-10 item-10 item-10 item-10 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-11 item-11 item-11 item-11 item-11 item-11"
+    "item-10 item-10 item-10 item-10 item-10 item-10 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-7 item-11 item-11 item-11 item-11 item-11 item-11"
+    "item-12 item-12 item-12 item-12 item-13 item-13 item-14 item-14 item-15 item-15 item-15 item-15 item-16 item-16 item-17 item-17 item-17 item-17 item-17 item-17"
+    ;
+}
+
+.item-1 {
+    grid-area: item-1;
+}
+
+/* Repeat the pattern for the remaining items */
+.item-2 {
+    grid-area: item-2;
+}
+
+.item-3 {
+    grid-area: item-3;
+}
+
+/* Continue this pattern for item-4 through item-17 */
+.item-4 {
+    grid-area: item-4;
+}
+
+.item-5 {
+    grid-area: item-5;
+}
+
+.item-6 {
+    grid-area: item-6;
+}
+
+.item-7 {
+    grid-area: item-7;
+}
+
+.item-8 {
+    grid-area: item-8;
+}
+
+.item-9 {
+    grid-area: item-9;
+}
+
+.item-10 {
+    grid-area: item-10;
+}
+
+.item-11 {
+    grid-area: item-11;
+}
+
+.item-12 {
+    grid-area: item-12;
+}
+
+.item-13 {
+    grid-area: item-13;
+}
+
+.item-14 {
+    grid-area: item-14;
+}
+
+.item-15 {
+    grid-area: item-15;
+}
+
+.item-16 {
+    grid-area: item-16;
+}
+
+.item-17 {
+    grid-area: item-17;
+}
